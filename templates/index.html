@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness Cards</title>
+  <!-- Enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Cargar Bootstrap desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="{{ url_for('static', filename='images/mi-imagen.jpg') }}" alt="Descripción de la imagen" class="left-image">
+    <h1 class="header-title">MIDFULNESS</h1>
+    <p class="header-subtitle">Beneficios de la meditación.</p>
+    <nav>
+        <a href="{{ url_for('home') }}" class="nav-link">Inicio</a>
+        <a href="{{ url_for('tarjetas') }}" class="nav-link active">Tarjetas</a>
+    </nav>
+  </header>
+  <!-- Main Section: Cards -->
+  <section class="cards-container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card">
+          <img src="https://img.freepik.com/vector-premium/nina-esta-meditando-lindo-yoga-mindfulness-relajacion-ilustracion-vectorial-estilo-dibujos-animados_174639-54359.jpg?w=740" class="card-img-top" alt="Mindfulness Image">
+          <div class="card-body">
+            <h5 class="card-title">Físico</h5>
+            <p class="card-text">"Genera sentirnos menos estresados y más relajados. Nos ayuda a tener menos predisposición a enfermarnos."</p>
+            <p class="card-text">
+              Nos ayuda a tener menos predisposición a enfermarnos. Fortalece el sistema inmunológico, normaliza la presión arterial, reduce los niveles de dolor causados por tensión, aumenta los niveles de energía, retarda el envejecimiento, facilita obtener un sueño reparador, mejora el metabolismo, reduce la inflamación y el asma.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="https://centropsicalma.com/wp-content/uploads/2022/10/mindfulness-600x400.jpg" class="card-img-top" alt="Mental Image">
+          <div class="card-body">
+            <h5 class="card-title">Mental</h5>
+            <p class="card-text">"Genera sentirnos en calma y tener paz interna..."</p>
+            <p class="card-text">
+              Reduce el estrés y la impulsividad, alivia la ansiedad y la preocupación. Produce mayor inteligencia emocional, lo que mejora nuestras relaciones. Brinda mayor claridad mental, incrementa el foco y la concentración. Aumenta las hormonas de la felicidad, provee estabilidad emocional. Incrementa la capacidad de atención y aumenta la autoestima.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card">
+          <img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-mental-health-meditation-illustration-png-image_13147790.png" class="card-img-top" alt="Mindfulness Image">
+          <div class="card-body">
+            <h5 class="card-title">Espiritual</h5>
+            <p class="card-text">"Nos ayuda a encontrar significado y propósito en nuestra vida."</p>
+            <p class="card-text">
+              Nuestra intuición y percepción aumentará, al igual que el amor hacia otras personas, lo que nos trae un beneficio directo al sentirnos más felices. Aumentará nuestra capacidad de compasión. Te acercará a tus valores personales e incrementará tus niveles de empatía.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Creadas por Francisca Cholakis.</p>
+    <p>&copy; 2024 Mindfulness Cards. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Cargar Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
