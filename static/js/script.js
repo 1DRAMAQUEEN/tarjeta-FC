@@ -1,7 +1,7 @@
 // Datos para las tarjetas
 const tarjetas = [
     { imagen: "img1.png", frase: "1Cierra los ojos o déjalos entreabiertos. Imagina un lugar seguro y cómodo, como una habitación, una cabaña en el bosque o un mundo mágico con dragones que te protegen. Usa tus sentidos: observa los detalles, escucha los sonidos o el silencio, y siente la calma. Quédate ahí el tiempo que necesites para relajarte." },
-    { imagen: "img2.jpg", frase: "2Tienes que tomar aire por 4 segundos por la nariz, luego retener el aire po 7 segundos y finalmente exhalar por 8 segundos por la boca ruidosamente. Haz este ejercicio 4 veces seguidas." },
+    { imagen: "img2.png", frase: "2Tienes que tomar aire por 4 segundos por la nariz, luego retener el aire po 7 segundos y finalmente exhalar por 8 segundos por la boca ruidosamente. Haz este ejercicio 4 veces seguidas." },
     { imagen: "img3.png", frase: "3Toma cualquier objeto en tus manos que tengas. Explora el objeto con las manos y los dedos, siente la(s) forma(s), textura(s) y temperatura del objeto. Esto se puede hacer en combinación con la visión, o con los ojos cerrados, centrándose exclusivamente en el tacto." },
     { imagen: "img4.png", frase: "4 Da un paseo alrededor de la sala. Presta atención a la sensación de tus pies en contacto con el suelo. Deja ir los pensamientos, emociones, y otras distracciones y simplemente camina, como si ser consciente de cada paso fuera de vital importancia. Puedes también jugar a evitar las líneas en el suelo (o pisar sobre ellas) o contar pasos entre objetos fijos como mesas y sillas." },
     { imagen: "img5.png", frase: "5Une tus manos formando una mariposa y coloca los dedos debajo de tu clavícula. Cierra los ojos y respira tranquila y profundamente. Da toques suaves y rítmicos por 1 a 3 minutos. Observa lo que sientes sin intentar cambiarlo o juzgarlo. Continúa hasta que te sientas más calmado. Respira profundo y agradece por aprender esta técnica." },
@@ -23,13 +23,15 @@ tarjetas.forEach((tarjeta) => {
     card.className = "card";
 
     card.innerHTML = `
-        <div class="card-inner">
+        <div class="card-inner card">
+        <div class="card-body">
             <div class="card-front">
-                <img src="${tarjeta.imagen}" alt="Imagen de tarjeta">
+                <img class="" src="/static/images/${tarjeta.imagen}" alt="Imagen de tarjeta">
             </div>
             <div class="card-back">
-                <p>${tarjeta.frase}</p>
+                <p class="card-text">${tarjeta.frase}</p>
             </div>
+        </div>
         </div>
     `;
 
