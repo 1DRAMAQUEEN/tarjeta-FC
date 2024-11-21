@@ -8,7 +8,7 @@ def home():
 
 @app.route('/tarjetas')
 def tarjetas():
-    return render_template('tarjetas.html')
+    return render_template('cards.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
